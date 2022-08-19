@@ -1,6 +1,6 @@
 import { getAll } from "../../api/api";
 import nextId from "react-id-generator";
-
+import alert from '../../alert/alert.mp3'
 
 const initialState = {
     dialogs: [
@@ -188,11 +188,13 @@ export const addMessage = (dialogId, messageText, userId) => ({ type: 'ADD_NEW_M
 export const setChatFilter = (filterText) => ({ type: 'SET_CHAT_FILTER', filterText });
 
 export const getMessage = (dialogId, userId) => (dispatch) => {
+    const sound = new Audio(alert)
     setTimeout(() => {
         getAll.getMessage()
             .then(resp => {
                 dispatch(addMessage(dialogId, resp.data.value, userId))
             })
+            sound.play()
     }, 10000)
 }
 
