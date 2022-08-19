@@ -1,0 +1,33 @@
+.message {
+    display: flex;
+    &-mine {
+        justify-content: flex-end;
+    }
+    &__item {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__text {
+        display: flex;
+        height: fit-content;
+        justify-content: center;
+        box-sizing: border-box;
+        width: fit-content;
+        padding: 10px;
+        background: #3c4252;
+        font-size: 15px;
+        font-weight: 600;
+        color:  #fff;
+        border-radius: 20px;
+        margin-bottom: 5px;
+    }
+    &__text-mine {
+        color: #3c4252;
+        background: #e0e0e0
+    }
+    &__date-mine {
+        text-align: right;
+    }
+
+}

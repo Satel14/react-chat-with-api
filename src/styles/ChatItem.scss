@@ -1,0 +1,24 @@
+.chat {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #e7e7e7;
+    &__wrapper {
+        display: flex;
+    }
+    &__context {
+        justify-self: flex-start;
+        display: flex;
+        flex-direction: column;
+
+    }
+    &__date {
+        font-size: 12px;
+    }
+    &__name {
+        font-weight: 600;
+    }
+    &__lastMessage {
+        font-size: 14px;
+    }
+}
