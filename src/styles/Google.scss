@@ -46,4 +46,15 @@ h5{
         margin-left: -56px;
     }
 }
-    
+@media screen and (max-width: 768px) {
+    .chats__user span {
+        font-size: 14px;
+    }
+    .google_logout{
+        margin-left: -60px;
+    }
+    h5{
+        width: 50px;
+        top: -28px;
+    }
+}
