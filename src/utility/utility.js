@@ -1,4 +1,4 @@
-const filterDate = (data, filterText) => data.toLowerCase().indexOf(filterText.toLowerCase()) > -1;
+const filterDate = (data, filterText) => data?.toLowerCase().indexOf(filterText.toLowerCase()) > -1;
 
 export const filterChatsBySearch = (obj, filterText) => {
     return obj.filter(i => {

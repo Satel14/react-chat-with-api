@@ -7,7 +7,7 @@
         padding: 30px 20px;
     }
 }
-.add-message{
+.add-message {
     background: #f5f5f5;
     display: flex;
     align-items: center;
@@ -35,4 +35,12 @@
             width: 23px;
         }
     }
- }
+}
+.array_back {
+    border-radius: 25px;
+    color: black;
+    padding: 5px;
+    margin-bottom: 8px;
+    border: 2px solid #646b76;
+    cursor: pointer;
+}

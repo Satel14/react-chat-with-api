@@ -30,7 +30,7 @@ const Messages = ({ messages, addMessage, currentDialog, auth, users, getMessage
     return (
         <div className="messages">
             <div className="messages__header">
-                <NavLink to='/' className="messages__back "><button>←</button></NavLink>
+                <NavLink to='/' className="messages__back "><button className="array_back">←</button></NavLink>
                 <Avatar avatar={currentMember.avatar} online={currentMember.online} />
                 <span>{currentMember.userName}</span>
             </div>

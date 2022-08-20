@@ -5,6 +5,7 @@ import moment from 'moment';
 import { getCurrentMemember } from "../utility/utility";
 import Avatar from "./Avatar";
 import '../styles/Chats.scss';
+import Google from "./Google";
 
 const Chats = ({ users, auth, setChatFilter, chatFilter, dialogs }) => {
 
@@ -31,7 +32,9 @@ const Chats = ({ users, auth, setChatFilter, chatFilter, dialogs }) => {
                         <div className="chats__user">
                             <Avatar avatar={auth.avatar} online={auth.islogin} />
                             {auth.islogin ? <span>{auth.userName}</span> : null}
+                           <Google/>
                         </div>
+
                         <div className="chat__form">
                             <input type="text"
                                 placeholder="Search or start new chat"
